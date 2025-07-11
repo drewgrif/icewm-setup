@@ -161,7 +161,7 @@ PACKAGES_CORE=(
 )
 
 PACKAGES_UI=(
-    polybar rofi dunst feh lxappearance network-manager-gnome
+    rofi dunst feh lxappearance network-manager-gnome
 )
 
 PACKAGES_FILE_MANAGER=(

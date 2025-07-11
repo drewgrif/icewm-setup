@@ -410,7 +410,7 @@ KeySysWorkspace6TakeWin="Super+Shift+6"
 KeyWinClose="Super+q"
 
 #  Maximizes the active window without borders.
-# KeyWinFullscreen="Alt+F11"
+KeyWinFullscreen="Super+F11"
 
 #  Hides the active window.
 # KeyWinHide="Alt+Shift+F12"
@@ -461,7 +461,7 @@ KeyWinClose="Super+q"
 # KeyWinSmartPlace="Ctrl+Alt+Shift+KP_Begin"
 
 #  Let the active window occupy the bottom half of the screen.
-# KeyWinTileBottom=""
+KeyWinTileBottom="Super+Down"
 
 #  Let the active window occupy the bottom left quarter of the screen.
 # KeyWinTileBottomLeft=""
@@ -470,16 +470,16 @@ KeyWinClose="Super+q"
 # KeyWinTileBottomRight=""
 
 #  Let the active window occupy the center quarter of the screen.
-# KeyWinTileCenter=""
+KeyWinTileCenter="Super+Shift+space"
 
 #  Let the active window occupy the left half of the screen.
-# KeyWinTileLeft=""
+KeyWinTileLeft="Super+Left"
 
 #  Let the active window occupy the right half of the screen.
-# KeyWinTileRight=""
+KeyWinTileRight="Super+Right"
 
 #  Let the active window occupy the top half of the screen.
-# KeyWinTileTop=""
+KeyWinTileTop="Super+Up"
 
 #  Let the active window occupy the top left quarter of the screen.
 # KeyWinTileTopLeft=""
@@ -926,7 +926,7 @@ TaskbarButtonWidthDivisor=2 # [1-50]
 TerminalCommand="wezterm start"
 
 #  Clock Time format (strftime format string)
-TimeFormat="%a, %b %-d  %l:%M %p"
+TimeFormat="%a %-m/%-d   %-l:%M %p"
 
 #  Alternate Clock Time format for blinking effects.
 # TimeFormatAlt=""
@@ -1018,7 +1018,7 @@ WorkspaceStatusTime=1000 # [0-2500]
 # ClockFontName="-misc-dejavu sans mono-medium-r-normal--14-*-*-*-*-*-*-*"
 
 #  Name of the task bar clock font.
-# ClockFontNameXft="DejaVu Sans Mono:monospace:size=12"
+# ClockFontNameXft="JetBrains Mono:size=11"
 
 #  Border of active windows.
 # ColorActiveBorder="rgb:C0/C0/C0"
@@ -1105,7 +1105,7 @@ ColorActiveWorkspaceButtonText="rgb:DB/C7/04"
 # ColorClock="rgb:00/00/00"
 
 #  Text color of non-LCD clock.
-# ColorClockText="rgb:00/FF/00"
+# ColorClockText="rgb:E5/E5/E5"
 
 #  Background of the taskbar.
 # ColorDefaultTaskBar="rgb:C0/C0/C0"

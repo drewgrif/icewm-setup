@@ -1,0 +1,190 @@
+ThemeDescription="Windows 10 Dark Based theme"
+
+ThemeAuthor="ItzSelenux"
+
+Look=flat
+TitleBarHeight=30
+TitleBarJustify=50
+
+TitleButtonsLeft="s"
+TitleButtonsRight="xmi"
+TitleButtonsSupported="sxmi"
+
+BorderSizeX=1
+BorderSizeY=1
+CornerSizeX=16
+CornerSizeY=16
+DlgBorderSizeX=1
+DlgBorderSizeY=1
+
+ColorNormalBorder="#0d1117"
+ColorActiveBorder="#415555"
+ColorActiveTitleBar="#0d1117"
+ColorNormalTitleBar="#0d1117"
+ColorNormalButton="#0d1117"
+ColorNormalTitleBarText="#8b949e"
+ColorActiveTitleBarText="#d0d7de"
+# Menu colors - GitHub dark theme
+ColorNormalMenu="#0d1117"
+ColorActiveMenuItem="#415555"
+ColorNormalMenuItemText="#d0d7de"
+ColorActiveMenuItemText="#FFFFFF"
+ColorDisabledMenuItemText="#8b949e"
+ColorMoveSizeStatus="#0d1117"
+ColorMoveSizeStatusText="#d0d7de"
+
+ColorInputSelection="#415555"
+#taskbar parameters - GitHub dark theme colors
+ColorDefaultTaskBar="#0d1117"
+ColorNormalTaskBarApp="#0d1117"
+ColorNormalTaskBarAppText="#d0d7de"
+ColorActiveTaskBarApp="#6f8fb6"
+ColorActiveTaskBarAppText="#FFFFFF"
+ColorMinimizedTaskBarApp="#0d1117"
+ColorMinimizedTaskBarAppText="#8b949e"
+TaskBarSize =40
+#Start menu icon
+StartMenuIcon="taskbar/linuxBAK1.xpm"
+#listbox - GitHub dark theme
+ColorListBox="#0d1117"
+ColorListBoxText="#d0d7de"
+ColorListBoxSelection="#415555"
+ColorListBoxSelectionText="#FFFFFF"
+#Dialog box - GitHub dark theme
+ColorDialog="#0d1117"
+#Tooltip text - GitHub dark theme
+ColorToolTip="#0d1117"
+ColorToolTipText="#d0d7de"
+#scrollbar
+ColorScrollBar="rgb:C0/C0/C0"
+ColorScrollBarSlider="rgb:C0/C0/C0"
+ColorScrollBarButtonArrow="rgb:C0/C0/C0"
+#Quick switch - GitHub dark theme
+ColorQuickSwitch="#0d1117"
+ColorQuickSwitchActive="#415555"
+ColorQuickSwitchText="#d0d7de"
+ColorClock="#0d1117"
+ColorClockText="#d0d7de"
+
+#workspace text - GitHub dark theme colors
+# Color of normal workspace button text
+ColorNormalWorkspaceButtonText="#d0d7de"
+
+# Color of active workspace button text
+ColorActiveWorkspaceButtonText="#FFFFFF"
+
+#background parameters
+DesktopBackgroundCenter=0
+DesktopBackgroundScaled=1
+DesktopBackgroundImage="default.png"
+
+
+#### INSERTED HERE
+
+# Inspired by John H Baumgaertner's Baugmo collection
+# baugmo at pointedstick point org
+
+#ThemeAuthor="OU812 & Impuwat"
+#ThemeDescription="antiX Blue"
+
+# Gradients with GitHub colors
+Gradients="menubg.xpm menusel.xpm workspacebuttonactive.xpm taskbuttonactive.xpm"
+Look=flat
+
+RolloverButtonsSupported=0 # 0 / 1
+TitleButtonsSupported="dhimrsx"
+# TitleButtonsLeft="d"
+# TitleButtonsRight="xsmi"
+
+#Colors
+
+#ColorNormalMenu="#454545"
+
+ColorMoveSizeStatus="#CCB8A9"
+ColorMoveSizeStatusText="#000000"
+ColorScrollBar="#EAEAEA"
+ColorScrollBarSlider="#EAEAEA"
+ColorScrollBarButton="#EAEAEA"
+ColorScrollBarButtonArrow="#000000"
+
+ColorActiveTitleBarText="rgb:e6/e6/e6"
+#ColorNormalTitleBarText="rgb:cc/b8/a9"
+#ColorActiveTitleBarShadow="rgb:00/00/00"
+#ColorNormalTitleBarShadow="rgb:00/00/00"
+#ColorDialog="rgb:d6/d6/d6"
+#ColorLabel="rgb:d6/d6/d6"
+
+#ColorQuickSwitch="rgb:d6/d6/d6"
+#ColorQuickSwitchText="rgb:00/00/00"
+#ColorQuickSwitchActive="rgb:55/66/88"
+
+#ColorListBox="rgb:d6/d6/d6"
+#ColorListBoxText="rgb:00/00/00"
+#ColorListBoxSelection="rgb:55/66/88"
+#ColorListBoxSelectionText="rgb:ff/ff/ff"
+
+#ColorClock=""
+#ColorClockText="#b6a699"
+
+#ColorApm="#000000"			# Background colour of APM monitor, ""=force transparency
+#ApmFontNameXft="sans:size=10.5"
+#ColorApmText="#FFFFFF"
+
+#ColorNetIdle="#000000"			# Background colour of the network monitor, 
+#ColorNetReceive="#FFFF00"		# Incoming load on the network monitor
+#ColorNetSend="#00FF00"			# Outgoing load on the network monitor
+
+#ColorCPUStatusIdle="#000000"		# Background colour of the CPU monitor, ""=force transparency
+#ColorCPUStatusUser="#FF0000"		# User load on the CPU monitor
+#ColorCPUStatusSystem="#C000C0"		# System load on the CPU monitor
+#ColorCPUStatusNice="#000000"		# Nice load on the CPU monitor
+
+#ColorToolTip="#FFE28A"
+#ColorToolTipText="#323232"
+
+#ColorInput="#BAA89A"
+#ColorInputText="#000000"
+#ColorInputSelection="rgb:55/66/88"
+#ColorInputSelectionText="rgb:ff/ff/ff"
+
+# Font Specification
+TitleFontNameXft		=	"JetBrains Mono:size=10:bold"
+MenuFontNameXft			=	"JetBrains Mono:size=11"
+MinimizedWindowFontNameXft	=	"JetBrains Mono:size=10:bold"
+ActiveButtonFontNameXft		=	"JetBrains Mono:size=11:bold"
+NormalButtonFontNameXft		=	"JetBrains Mono:size=11"
+ToolButtonFontNameXft		=	"JetBrains Mono:size=11"
+NormalWorkspaceFontNameXft	=	"JetBrains Mono:size=11"
+ActiveWorkspaceFontNameXft	=	"JetBrains Mono:size=11"
+QuickSwitchFontNameXft		=	"JetBrains Mono:size=11"
+ListBoxFontNameXft		=	"JetBrains Mono:size=11"
+StatusFontNameXft		=	"JetBrains Mono:size=11"
+ToolTipFontNameXft		=	"JetBrains Mono:size=11"
+ActiveTaskBarFontNameXft	=	"JetBrains Mono:size=11"
+NormalTaskBarFontNameXft	=	"JetBrains Mono:size=11"
+ClockFontNameXft		=	"JetBrains Mono:size=11"
+InputFontNameXft		=	"JetBrains Mono:size=11"
+
+TaskBarClockLeds=0
+#Sizes
+
+TitleBarHeight=20 # 0-128
+TitleBarHorzOffset=5 # -128-128
+
+BorderSizeX=1 # 0-128
+BorderSizeY=3 # 0-128
+CornerSizeX=26 # 0-64
+CornerSizeY=26 # 0-64
+
+DlgBorderSizeX=1 # 0-128
+DlgBorderSizeY=3 # 0-128
+
+ShapesProtectClientWindow=1 # 0 / 1
+
+MenuIconSize=24		        # Menu
+SmallIconSize=24 			# Taskbar & Titlebar. Taskbar height = height of linux.xpm. Titlebar height = TitleBarHeight in *.theme
+LargeIconSize=32			# Quickswitch window
+HugeIconSize=48				# ?  Cannot identify what it applies to
+ShowMenuButtonIcon=0			# Show application icon on menuButton
+
+TitleBarHeight=30

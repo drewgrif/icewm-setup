@@ -1,0 +1,57 @@
+# IceWM Keybindings Configuration
+# Optimized for productivity
+#
+# Modifiers: Alt, Ctrl, Shift, Meta, Super and Hyper
+#
+
+# Application Launchers
+key "Super+Return"          wezterm
+key "Super+b"               firefox-esr
+key "Super+e"               geany
+key "Super+f"               thunar
+key "Super+space"           rofi -show drun -modi drun -line-padding 4 -hide-scrollbar -show-icons -theme ~/.icewm/rofi/config.rasi
+key "Super+Shift+Return"    wezterm start --class=floating
+key "Super+g"               gimp
+key "Super+v"               code
+key "Super+m"               thunderbird
+
+# Window Management
+key "Super+l"               i3lock -c 000000
+key "Super+Shift+q"         killall -KILL
+key "Super+Tab"             rofi -show window -theme ~/.icewm/rofi/config.rasi
+key "Super+r"               rofi -show run -theme ~/.icewm/rofi/config.rasi
+
+# Screenshot
+key "Print"                 flameshot gui
+key "Shift+Print"           flameshot full -c
+key "Ctrl+Print"            flameshot screen -c
+
+# Audio Controls
+key "Super+KP_Subtract"     amixer sset Master 5%-
+key "Super+KP_Add"          amixer sset Master 5%+
+key "Super+KP_0"            amixer sset Master toggle
+
+# Multimedia Keys
+key "XF86AudioLowerVolume"  amixer sset Master 5%-
+key "XF86AudioRaiseVolume"  amixer sset Master 5%+
+key "XF86AudioMute"         amixer sset Master toggle
+key "XF86AudioPlay"         playerctl play-pause
+key "XF86AudioStop"         playerctl stop
+key "XF86AudioPrev"         playerctl previous
+key "XF86AudioNext"         playerctl next
+
+# Browser Keys
+key "XF86HomePage"          firefox-esr
+key "XF86Search"            firefox-esr https://www.duckduckgo.com
+key "XF86Mail"              thunderbird
+
+# System
+key "XF86Calculator"        gnome-calculator
+key "XF86Eject"             eject
+
+# Display Configuration
+switchkey "Super+p"         icewm-menu-xrandr
+
+# Brightness (for laptops)
+key "XF86MonBrightnessUp"   xbacklight -inc 10
+key "XF86MonBrightnessDown" xbacklight -dec 10

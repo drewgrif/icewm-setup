@@ -1,0 +1,20 @@
+#!/bin/bash
+# IceWM Startup Script
+# This script runs when IceWM starts
+
+# Set background
+if [ -f ~/.icewm/wallpaper/wallhaven-5g2zr9_3440x1440.png ]; then
+    feh --bg-fill ~/.icewm/wallpaper/wallhaven-5g2zr9_3440x1440.png &
+fi
+
+# Authentication agent for privilege escalation
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+# Notification daemon
+dunst -config ~/.icewm/dunst/dunstrc &
+
+# Compositor for transparency and effects
+picom --config ~/.icewm/picom/picom.conf --animations -b &
+
+## Polybar or tint
+~/.icewm/polybar/polybar-ice &

@@ -1,0 +1,65 @@
+# IceWM menu configuration
+#
+# Applications menu with better organization
+#
+
+# Quick launch applications
+prog Terminal wezterm wezterm
+prog "Web Browser" firefox firefox-esr
+prog "File Manager" thunar thunar
+prog "Text Editor" geany geany
+separator
+
+# Applications menu
+menu Applications folder {
+    menu Internet folder {
+        prog Firefox firefox firefox-esr
+        prog "Mail Client" thunderbird thunderbird
+        prog Discord discord discord
+        prog Telegram telegram telegram-desktop
+    }
+    menu Development folder {
+        prog "VS Code" code code
+        prog Geany geany geany
+        prog "Git GUI" git-gui git gui
+    }
+    menu Graphics folder {
+        prog GIMP gimp gimp
+        prog Inkscape inkscape inkscape
+        prog "Image Viewer" viewnior viewnior
+    }
+    menu Multimedia folder {
+        prog VLC vlc vlc
+        prog Audacity audacity audacity
+        prog "PulseAudio Control" pavucontrol pavucontrol
+    }
+    menu Office folder {
+        prog LibreOffice libreoffice libreoffice
+        prog "PDF Viewer" evince evince
+    }
+}
+
+# System tools
+menu System folder {
+    prog "Task Manager" htop wezterm start -- htop
+    prog "System Monitor" gnome-system-monitor gnome-system-monitor
+    prog "Disk Usage" baobab baobab
+    separator
+    prog "Display Settings" - icewm-menu-xrandr
+    prog "Audio Settings" pavucontrol pavucontrol
+    prog "Network Manager" nm-connection-editor nm-connection-editor
+}
+
+# Utilities
+menu Utilities folder {
+    prog Calculator gnome-calculator gnome-calculator
+    prog Screenshot flameshot flameshot gui
+    prog "Color Picker" gpick gpick
+    prog "Archive Manager" file-roller file-roller
+}
+
+separator
+# System-generated menus
+includeprog icewm-menu-fdo --no-sep-others --seps
+menuprog Monitors ../devices/computer icewm-menu-xrandr
+menufile Toolbar folder toolbar

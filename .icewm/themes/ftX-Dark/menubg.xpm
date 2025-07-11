@@ -1,0 +1,7 @@
+/* XPM */
+static char *menubg_xpm[] = {
+"2 2 1 1",
+" 	c #0d1117",
+"  ",
+"  "
+};

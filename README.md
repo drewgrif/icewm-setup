@@ -141,14 +141,16 @@ sudo zypper install icewm rofi dunst picom thunar \
 
 | Key Combo              | Action                                |
 |------------------------|----------------------------------------|
-| `Alt + F1`             | Launch rofi                            |
-| `Alt + F2`             | Launch run dialog                      |
-| `Alt + F4`             | Close focused window                   |
-| `Ctrl + Alt + T`       | Launch terminal (wezterm)              |
-| `Ctrl + Alt + L`       | Lock screen                            |
-| `Alt + Tab`            | Cycle through windows                  |
-| `Ctrl + Alt + Left/Right` | Switch to previous/next workspace   |
-| `Print`                | Take screenshot                        |
+| `Super + Return`       | Launch terminal (wezterm)              |
+| `Super + Shift + Return` | Launch floating terminal             |
+| `Super + Space`        | Launch rofi application launcher       |
+| `Super + r`            | Launch rofi run dialog                 |
+| `Super + Tab`          | Show window switcher                   |
+| `Super + b`            | Launch Firefox                         |
+| `Super + f`            | Launch file manager (Thunar)           |
+| `Super + l`            | Lock screen                            |
+| `Print`                | Take screenshot (GUI)                  |
+| `Shift + Print`        | Take full screenshot to clipboard      |
 
 Keybindings are configured via IceWM's native configuration system.
 
@@ -185,7 +187,7 @@ Keybindings are configured via IceWM's native configuration system.
 ### Terminal Configuration
 
 The setup uses wezterm as the default terminal emulator, launched via:
-- `Ctrl + Alt + T`: Launch terminal
+- `Super + Return`: Launch terminal
 - Application menu or desktop shortcuts
 
 Terminal configuration can be customized through:

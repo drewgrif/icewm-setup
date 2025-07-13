@@ -1,0 +1,75 @@
+#!/bin/bash
+
+# Parse IceWM keys file and display keybindings with rofi
+
+# Extract keybindings with their descriptions from comments
+keybindings=$(awk '
+    # Skip empty lines
+    /^$/ { next }
+    
+    # Store section headers as descriptions
+    /^# [A-Z]/ && !/^# IceWM/ && !/^# Modifiers/ { 
+        section = $0
+        gsub(/^# /, "", section)
+        next 
+    }
+    
+    # Process key bindings
+    /^key / || /^switchkey / {
+        # Extract the type, keybinding and command
+        type = $1
+        binding = $2
+        command = ""
+        for (i = 3; i <= NF; i++) {
+            command = command (i==3 ? "" : " ") $i
+        }
+        
+        # Remove quotes from binding
+        gsub(/"/, "", binding)
+        
+        # Convert modifier names for consistency
+        gsub(/Super/, "Super", binding)
+        gsub(/Alt/, "Alt", binding)
+        gsub(/Ctrl/, "Control", binding)
+        gsub(/Shift/, "Shift", binding)
+        
+        # Create description based on command or section
+        if (section != "") {
+            # Use section as category prefix
+            if (command ~ /wezterm/) {
+                display = section ": Open terminal"
+            } else if (command ~ /firefox/) {
+                display = section ": Web browser"
+            } else if (command ~ /rofi.*drun/) {
+                display = section ": Application launcher"
+            } else if (command ~ /rofi.*window/) {
+                display = section ": Window switcher"
+            } else if (command ~ /rofi.*run/) {
+                display = section ": Run command"
+            } else if (command ~ /flameshot/) {
+                display = section ": Screenshot"
+            } else if (command ~ /amixer.*Master/) {
+                if (command ~ /toggle/) {
+                    display = section ": Toggle mute"
+                } else if (command ~ /%+/) {
+                    display = section ": Volume up"
+                } else if (command ~ /%-/) {
+                    display = section ": Volume down"
+                }
+            } else {
+                display = section ": " command
+            }
+        } else {
+            display = command
+        }
+        
+        # Format output
+        printf "%-25s │ %s\n", binding, display
+    }
+    
+    # Clear section on empty line
+    /^$/ { section = "" }
+' ~/.icewm/keys | sort)
+
+# Display in rofi with keybinds theme
+echo "$keybindings" | rofi -dmenu -i -p "IceWM Keybindings" -theme ~/.icewm/rofi/keybinds.rasi

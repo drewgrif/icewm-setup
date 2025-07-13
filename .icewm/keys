@@ -14,6 +14,7 @@ key "Super+Shift+Return"    wezterm start --class=floating
 key "Super+g"               gimp
 key "Super+v"               code
 key "Super+m"               thunderbird
+key "Super+h"               ~/.icewm/scripts/icewm-help
 
 # Window Management
 key "Super+l"               i3lock -c 000000
@@ -22,19 +23,23 @@ key "Super+Tab"             rofi -show window -theme ~/.icewm/rofi/config.rasi
 key "Super+r"               rofi -show run -theme ~/.icewm/rofi/config.rasi
 
 # Screenshot
-key "Print"                 flameshot gui
-key "Shift+Print"           flameshot full -c
-key "Ctrl+Print"            flameshot screen -c
+# Take a Fullscreen Screenshot
+key "Print"                 flameshot full --path ~/Screenshots/
+# Take a Screenshot (Region Select)
+key "Super+Print"           flameshot gui --path ~/Screenshots/
 
 # Audio Controls
-key "Super+KP_Subtract"     amixer sset Master 5%-
-key "Super+KP_Add"          amixer sset Master 5%+
-key "Super+KP_0"            amixer sset Master toggle
+key "Super+KP_Subtract"     ~/.icewm/scripts/changevolume down
+key "Super+KP_Add"          ~/.icewm/scripts/changevolume up
+key "Super+KP_0"            ~/.icewm/scripts/changevolume mute
+key "Super+Insert"          ~/.icewm/scripts/changevolume up
+key "Super+Delete"          ~/.icewm/scripts/changevolume down
+key "Super+m"               ~/.icewm/scripts/changevolume mute
 
 # Multimedia Keys
-key "XF86AudioLowerVolume"  amixer sset Master 5%-
-key "XF86AudioRaiseVolume"  amixer sset Master 5%+
-key "XF86AudioMute"         amixer sset Master toggle
+key "XF86AudioLowerVolume"  ~/.icewm/scripts/changevolume down
+key "XF86AudioRaiseVolume"  ~/.icewm/scripts/changevolume up
+key "XF86AudioMute"         ~/.icewm/scripts/changevolume mute
 key "XF86AudioPlay"         playerctl play-pause
 key "XF86AudioStop"         playerctl stop
 key "XF86AudioPrev"         playerctl previous

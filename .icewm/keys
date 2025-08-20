@@ -25,9 +25,9 @@ key "Super+r"               rofi -show run -theme ~/.icewm/rofi/config.rasi
 
 # Screenshot
 # Take a Fullscreen Screenshot
-key "Print"                 flameshot full --path ~/Screenshots/
+key "Print"                 sh -c "flameshot full --path ~/Screenshots/"
 # Take a Screenshot (Region Select)
-key "Super+Print"           flameshot gui --path ~/Screenshots/
+key "Super+Print"           sh -c "flameshot gui --path ~/Screenshots/"
 
 # Audio Controls
 key "Super+KP_Subtract"     ~/.icewm/scripts/changevolume down

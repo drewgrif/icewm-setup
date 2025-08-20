@@ -5,7 +5,9 @@
 A minimal but functional IceWM rice script for Debian-based systems.  
 Installs all core packages, window manager configs, and themes — ready to go out of the box.
 
-> Part of the [JustAGuy Linux](https://github.com/drewgrif) window manager collection.<img width="1920" height="1080" alt="2025-08-20_16-55" src="https://github.com/user-attachments/assets/0873d1ca-5fb4-4fb9-9a0d-c76c5c1675e3" />
+> Part of the [JustAGuy Linux](https://github.com/drewgrif) window manager collection.
+
+<img width="1920" height="1080" alt="2025-08-20_16-55" src="https://github.com/user-attachments/assets/0873d1ca-5fb4-4fb9-9a0d-c76c5c1675e3" />
 
 ---
 

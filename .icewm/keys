@@ -15,6 +15,7 @@ key "Super+g"               gimp
 key "Super+v"               code
 key "Super+m"               thunderbird
 key "Super+h"               ~/.icewm/scripts/icewm-help
+key "Super+Shift+v"         bash -ic 'note clip && notify-send " Clipboard saved to notes"'
 
 # Window Management
 key "Super+l"               i3lock -c 000000

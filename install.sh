@@ -276,7 +276,7 @@ if [ "$ONLY_CONFIG" = false ]; then
 
     msg "Installing wezterm..."
     get_script "wezterm/install_wezterm.sh"
-
+    
     msg "Installing st terminal..."
     wget -O "$TEMP_DIR/install_st.sh" "https://raw.githubusercontent.com/drewgrif/butterscripts/main/st/install_st.sh"
     chmod +x "$TEMP_DIR/install_st.sh"
